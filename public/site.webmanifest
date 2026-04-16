@@ -1,0 +1,22 @@
+{
+  "name": "AnsiConverter | MdtoDocx - Milkdown Editor",
+  "short_name": "MdtoDocx",
+  "description": "Markdown to DOCX converter with Milkdown WYSIWYG editor",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#5E81AC",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "prefer_related_applications": false
+}

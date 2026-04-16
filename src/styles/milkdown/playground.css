@@ -1,0 +1,152 @@
+.crepe .cm-editor {
+  height: 100%;
+  font-family: monospace;
+}
+
+@media (min-width: 768px) {
+  .crepe .cm-editor {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .crepe .cm-editor {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .crepe .cm-editor {
+    font-size: 1rem;
+  }
+}
+
+.crepe .cm-scroller {
+  overscroll-behavior: auto;
+}
+
+.crepe div[data-show='false'] {
+  display: none;
+}
+
+.playground-cm .ͼo .cm-content {
+  caret-color: #000 !important;
+}
+
+/* Fullscreen Milkdown when CodeMirror off */
+.fullscreen {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100dvh !important;
+  z-index: 999 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: auto !important;
+  background: white;
+}
+
+.fullscreen .crepe {
+  height: calc(100vh - 3rem) !important;
+  touch-action: manipulation;
+}
+
+.fullscreen .milkdown {
+  height: calc(100vh - 3rem) !important;
+  touch-action: manipulation;
+}
+
+.dark .fullscreen {
+  background: #0f0f0f !important;
+}
+
+.fullscreen .ProseMirror .cm-cursor,
+.fullscreen .crepe .cm-cursor,
+.fullscreen .cm-dropCursor {
+  border-left-color: #000 !important;
+  border-left-width: 2px !important;
+  opacity: 1 !important;
+}
+
+.dark .fullscreen .ProseMirror .cm-cursor,
+.dark .fullscreen .crepe .cm-cursor,
+.dark .fullscreen .cm-dropCursor {
+  border-left-color: #fff !important;
+}
+
+.fullscreen .ProseMirror::selection {
+  background: rgba(0,0,0,0.2) !important;
+}
+
+.dark .fullscreen .ProseMirror::selection {
+  background: rgba(255,255,255,0.2) !important;
+}
+
+.fullscreen *,
+.fullscreen *::before,
+.fullscreen *::after {
+  box-sizing: border-box !important;
+}
+
+.fullscreen .crepe,
+.fullscreen .milkdown,
+.fullscreen .ProseMirror,
+.fullscreen .prose,
+.fullscreen .editor {
+  max-width: none !important;
+  width: 100% !important;
+  min-height: calc(100vh - 3rem) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  touch-action: manipulation;
+}
+
+.fullscreen .prose > *,
+.fullscreen .milkdown > * {
+  max-width: none !important;
+}
+
+.fullscreen .control-panel-buttons {
+  z-index: 1001 !important;
+}
+
+/* Fullscreen editor overlay adjustments */
+.fullscreen .playground-cm {
+  height: calc(70vh - 3rem);
+  font-size: 0.85rem;
+}
+
+.dark .fullscreen .playground-cm {
+  background: #1a1a1a;
+}
+
+/* Always visible language badge/button on code blocks */
+.milkdown-code-block .language-button,
+.milkdown-code-block .tools {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: flex !important;
+}
+
+.milkdown-code-block:hover .language-button,
+.milkdown-code-block .language-button {
+  opacity: 1 !important;
+}
+
+.milkdown-code-block .tools-button-group {
+  opacity: 1 !important;
+}
+
+.milkdown-code-block button.language-button {
+  background: rgba(0,0,0,0.1) !important;
+}
+
+.dark .milkdown-code-block button.language-button {
+  background: rgba(255,255,255,0.1) !important;
+}
+
+.crepe .cm-editor,
+.ProseMirror pre {
+  position: relative !important;
+}

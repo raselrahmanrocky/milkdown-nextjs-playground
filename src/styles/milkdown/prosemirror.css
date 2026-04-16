@@ -1,0 +1,36 @@
+.ProseMirror:focus-visible {
+  outline: none;
+}
+
+.ProseMirror-selectednode {
+  outline: none;
+  outline: 2px solid #88c0d0;
+  outline-offset: 2px;
+}
+
+.dark .ProseMirror-selectednode {
+  outline-color: #81a1c1;
+}
+
+.ProseMirror span[data-type='html'] {
+  position: relative;
+  margin: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  background-color: #d8dae0;
+  font-family: sans-serif;
+  color: #81a1c1;
+}
+
+.dark .ProseMirror span[data-type='html'] {
+  background-color: #4c4f69;
+  color: #88c0d0;
+}
+
+.ProseMirror li::after {
+  all: unset !important;
+}
+
+.ProseMirror p > img:not(.ProseMirror-separator) {
+  width: 100%;
+}

@@ -1,0 +1,1 @@
+export { useLinkClass } from './useLinkClass'

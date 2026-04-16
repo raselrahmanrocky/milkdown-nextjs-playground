@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  @apply bg-[#fdfcff] text-gray-900;
+}
+
+.dark body {
+  @apply bg-[#1b1c1d] text-gray-50;
+}
+
+div[data-milkdown-root='true'] {
+  @apply h-full;
+}
+
+.milkdown {
+  @apply h-full;
+}
+
+button.main-button {
+  @apply shadow-sm transition hover:shadow-md active:shadow-none;
+}
+
+html {
+  scroll-padding-top: 76px;
+}
+
+button.button-primary {
+  @apply bg-[#5e81ac] text-white;
+}
+
+button.button-primary:hover {
+  background-color: color-mix(in srgb, #5e81ac, white 8%);
+}
+
+button.button-primary:active {
+  background-color: color-mix(in srgb, #5e81ac, white 12%);
+}
+
+button.button-default {
+  @apply bg-[#4c4f69] text-white;
+}
+
+button.button-default:hover {
+  background-color: color-mix(in srgb, #4c4f69, white 8%);
+}
+
+button.button-default:active {
+  background-color: color-mix(in srgb, #4c4f69, white 12%);
+}
+
+.dark button.button-default:hover {
+  background-color: color-mix(in srgb, #4c4f69, black 16%);
+}
+
+.dark button.button-default:active {
+  background-color: color-mix(in srgb, #4c4f69, black 12%);
+}
